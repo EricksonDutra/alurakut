@@ -8,9 +8,6 @@ export default async function recebedorDeRequests(request, response){
   const registroCriado = await client.items.create({
     itemType: "970508",
     ...request.body,
-    // title: "My community",
-    // imageUrl: "https://avatars.githubusercontent.com/u/63134236?v=4",
-    // creatorSlug: "EricksonDutra"
   })
 
   console.log(registroCriado);
